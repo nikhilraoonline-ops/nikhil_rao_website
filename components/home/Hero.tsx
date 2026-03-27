@@ -6,14 +6,14 @@ import Button from "@/components/ui/Button";
 const credentials = [
   { label: "Product Control" },
   { label: "CA (ICAI)"       },
-  { label: "CFA Level III"   },
+  { label: "CFA L3 Passed"   },
 ];
 
 const quickStats = [
-  { label: "Experience",    value: "5+ years"           },
-  { label: "Credentials",   value: "CA · CFA III"       },
-  { label: "Stack",         value: "Python · VBA · SQL" },
-  { label: "Focus",         value: "Rates · Derivatives" },
+  { label: "Experience",    value: "4+ years"                },
+  { label: "Credentials",   value: "CA · CFA L3"             },
+  { label: "Stack",         value: "Python · VBA · SQL"      },
+  { label: "Focus",         value: "MBS · Rates · Recons"    },
 ];
 
 // Decorative floating terms — Bloomberg-terminal aesthetic
@@ -71,8 +71,9 @@ export default function Hero() {
 
           {/* Short pitch */}
           <p className="mt-3 text-sm sm:text-base text-white/40 max-w-lg leading-relaxed anim-3">
-            Analyzing derivative P&amp;L, automating financial workflows, and writing
-            about the forces that move markets. Based in London.
+            Product Controller at JP Morgan Chase &amp; Co., Bengaluru. Automating financial
+            workflows, building Python tools that save hundreds of hours, and writing
+            about the forces that move markets.
           </p>
 
           {/* CTAs */}

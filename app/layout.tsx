@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Nikhil Rao",
   },
   description:
-    "Chartered Accountant, CFA Level III Candidate, and Product Control professional at a global investment bank. Writing about markets, quantitative finance, and automation.",
+    "Chartered Accountant, CFA Level 3 passed, and Product Control Associate at JP Morgan Chase & Co., Bengaluru. Writing about markets, quantitative finance, and automation.",
   keywords: [
     "finance",
     "product control",
@@ -40,13 +40,13 @@ export const metadata: Metadata = {
     siteName: "Nikhil Rao",
     title: "Nikhil Rao | Finance, Markets & Systems Thinking",
     description:
-      "Chartered Accountant, CFA Level III Candidate, and Product Control professional. Writing about markets and quantitative finance.",
+      "Chartered Accountant, CFA Level 3 passed, Product Control at JP Morgan Chase & Co. Writing about markets and quantitative finance.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Nikhil Rao | Finance, Markets & Systems Thinking",
     description:
-      "Chartered Accountant, CFA Level III Candidate. Product Control at a global investment bank.",
+      "Chartered Accountant, CFA Level 3 passed. Product Control Associate at JP Morgan Chase & Co., Bengaluru.",
   },
   robots: { index: true, follow: true },
 };

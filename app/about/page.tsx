@@ -4,7 +4,7 @@ import Badge from "@/components/ui/Badge";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Nikhil Rao — Chartered Accountant, CFA Level III Candidate, and Product Control professional at a global investment bank. Background in BFSI audit and financial instruments valuation.",
+    "Nikhil Rao — Chartered Accountant, CFA Level 3 passed, and Product Control Associate at JP Morgan Chase & Co., Bengaluru. Background in BFSI audit and financial instruments valuation.",
 };
 
 /* ─── Data ──────────────────────────────────────────────── */
@@ -20,45 +20,70 @@ interface TimelineEntry {
 
 const experience: TimelineEntry[] = [
   {
-    period: "2024 — Present",
-    role: "Product Control Analyst",
-    org: "Global Investment Bank",
-    location: "London, UK",
+    period: "Jan 2025 — Present",
+    role: "Associate — Product Control",
+    org: "JP Morgan Chase & Co.",
+    location: "Bengaluru, India",
     bullets: [
-      "Daily P&L production, sign-off, and commentary for fixed income and rates trading desks",
-      "Decomposition of P&L into delta, gamma, vega, carry, and unexplained residual components",
-      "Independent Price Verification (IPV) of OTC derivatives — swaps, swaptions, FX options",
-      "Month-end balance sheet substantiation, regulatory reporting (FINREP / COREP preparation)",
-      "Automation of manual reporting processes using Python and Excel VBA",
+      "Product Controller for Mortgage Banking Secondary Markets trade desks",
+      "Daily and monthly P&L and risk reporting, reconciliations, SOX and Volcker controls",
+      "Products include MBS, Ratelocks, Interest Rate Swaps (IRS), TBAs and CLNs",
+      "Developed multiple Python and VBA automation solutions creating time saves of 800+ hours per annum",
+      "Created reconciliation processes resulting in savings of upwards of $5mn (won a Value Pin for excellence)",
+      "One of the leads of the AI squad and designated AI Ambassador for the line of business",
+      "Won Annual Award for Culture for heading the Analysts' Committee at JPMC Bengaluru (2024)",
     ],
-    tags: ["P&L Attribution", "Derivatives", "Fixed Income", "IPV", "Bloomberg"],
+    tags: ["P&L Reporting", "MBS", "IRS", "TBA", "Python", "VBA", "SOX"],
   },
   {
-    period: "2022 — 2024",
-    role: "Senior Audit Associate — Financial Services",
-    org: "Big 4 Professional Services",
-    location: "London, UK",
+    period: "Apr 2022 — Dec 2024",
+    role: "Analyst — Product Control",
+    org: "JP Morgan Chase & Co.",
+    location: "Bengaluru, India",
     bullets: [
-      "Led statutory audit engagements for hedge funds, asset managers, and investment banks",
-      "Fair value assessment of financial instruments under IFRS 13 (Levels 1, 2, 3)",
-      "Complex structured products — CLOs, credit default swaps, convertible bonds",
-      "Risk-based audit approach; drafted audit committee papers and management letters",
-      "Team lead for a 4-person junior team on a mid-size hedge fund engagement",
+      "Product Controller on the same Mortgage Banking Secondary Markets trade desks",
+      "Individually developed macros and Python solutions saving 800+ hours p.a.",
+      "Won a Value Pin for Operational Excellence — ad-hoc Python recon saving the firm $4mn+",
+      "Won a Value Pin for organising LLM hackathons and designated AI Ambassador",
+      "Nominated for JPMC Rising Star Award in 2022 and 2023",
     ],
-    tags: ["IFRS 9 / 13", "Financial Instruments", "Audit", "Valuation", "Hedge Funds"],
+    tags: ["P&L Attribution", "Reconciliation", "Automation", "LLM / AI"],
   },
   {
-    period: "2019 — 2022",
-    role: "Chartered Accountancy — Articleship",
-    org: "Mid-Tier CA Firm",
+    period: "Apr 2021 — Mar 2022",
+    role: "Audit Manager",
+    org: "Rao & Santosh, Chartered Accountants",
+    location: "Chennai, India",
+    bullets: [
+      "Led an audit team across statutory, internal, and tax audits",
+      "Tax consultancy and income tax filings for a diverse client portfolio",
+      "Industries covered: real estate, jewellery, and software companies",
+    ],
+    tags: ["Statutory Audit", "Tax", "Internal Audit", "CA"],
+  },
+  {
+    period: "Apr 2020 — Mar 2021",
+    role: "Industrial Trainee — Finance",
+    org: "Hindustan Unilever Ltd.",
     location: "Mumbai, India",
     bullets: [
-      "3-year structured training programme covering statutory audits, direct and indirect tax",
-      "BFSI sector specialisation: NBFCs, insurance companies, stockbrokers",
-      "Qualified as Chartered Accountant (ICAI) on first attempt",
-      "Exposure to IndAS / IGAAP, SEBI regulations, and RBI guidelines",
+      "Financial reporting: experience in annual and quarterly reporting",
+      "Worked on statutory compliance processes",
+      "Assisted senior management on the Annual Report and AGM planning",
     ],
-    tags: ["CA (ICAI)", "BFSI", "IndAS", "Tax", "Internal Audit"],
+    tags: ["Financial Reporting", "FMCG", "Compliance", "AGM"],
+  },
+  {
+    period: "Apr 2018 — Mar 2020",
+    role: "Articled Assistant",
+    org: "Sundaram & Srinivasan, Chartered Accountants",
+    location: "Chennai, India",
+    bullets: [
+      "Statutory, internal, and process audits across multiple industries",
+      "Income tax audits and GST audits",
+      "Industries: automobiles, NBFCs, and insurance companies",
+    ],
+    tags: ["CA Articleship", "NBFC", "GST", "IndAS"],
   },
 ];
 
@@ -71,42 +96,41 @@ const skillGroups: SkillGroup[] = [
   {
     category: "Financial Analysis",
     skills: [
-      "P&L Attribution",
-      "Derivative Pricing (Black-Scholes, Monte Carlo)",
-      "Risk Reporting",
-      "Fixed Income Valuation",
-      "Fair Value Hierarchy (IFRS 13)",
+      "Daily P&L Reporting & Attribution",
+      "Risk Reporting & Reconciliations",
+      "MBS, IRS, TBA, CLN, Ratelock Products",
+      "SOX & Volcker Controls",
       "Financial Statement Analysis",
-      "FX / Rates Products",
+      "Tax — Direct & Indirect",
     ],
   },
   {
-    category: "Programming & Data",
+    category: "Programming & Automation",
     skills: [
-      "Python (pandas, numpy, matplotlib, openpyxl)",
-      "VBA / Excel Automation",
-      "SQL",
-      "Streamlit",
-      "Power Query",
+      "Python (pandas, openpyxl, automation)",
+      "VBA / Excel Macro Development",
+      "SQL (mid-level)",
+      "Alteryx (mid-level)",
+      "LLM / GPT AI Tools",
+      "MS Office (advanced)",
     ],
   },
   {
     category: "Tools & Platforms",
     skills: [
-      "Bloomberg Terminal",
-      "Murex",
-      "SAP",
       "Excel (Advanced)",
-      "Power BI",
-      "Git",
+      "Alteryx",
+      "Bloomberg",
+      "Power Query",
     ],
   },
   {
-    category: "Certifications",
+    category: "Education",
     skills: [
-      "Chartered Accountant — ICAI (First Attempt)",
-      "CFA Level III Candidate",
-      "B.Com (Hons)",
+      "Chartered Accountant — ICAI (July 2021)",
+      "CFA Level 3 — Passed (August 2025)",
+      "B.Com — IGNOU (2019)",
+      "Class 12 CBSE — 95.8% (2016)",
     ],
   },
 ];
@@ -181,22 +205,24 @@ export default function AboutPage() {
           </h1>
           <div className="max-w-2xl space-y-4">
             <p className="text-white/60 text-base leading-relaxed">
-              I work in product control at a global investment bank in London. My 
-              role sits at the intersection of trading, risk, and finance — reconciling
-              daily P&amp;L, decomposing it into its risk components, and independently
-              verifying derivative valuations.
+              I&apos;m a Product Control Associate at JP Morgan Chase &amp; Co. in
+              Bengaluru, covering the Mortgage Banking Secondary Markets trade desks.
+              My day involves daily and monthly P&amp;L reporting, risk reconciliations,
+              and SOX and Volcker controls across products like MBS, Ratelocks,
+              IRS, TBAs and CLNs.
             </p>
             <p className="text-white/60 text-base leading-relaxed">
-              Before London, I trained as a Chartered Accountant in India, where I 
-              developed deep expertise in BFSI audit and financial instruments accounting.
-              I passed the CA exams on the first attempt and specialised in financial
-              services clients from day one.
+              I qualified as a Chartered Accountant (ICAI) in 2021 and passed
+              CFA Level 3 in August 2025. Before joining JPMC, I trained at
+              Sundaram &amp; Srinivasan CAs, did an industrial training stint at
+              Hindustan Unilever in Mumbai, and spent a year managing audit
+              engagements at Rao &amp; Santosh CAs in Chennai.
             </p>
             <p className="text-white/60 text-base leading-relaxed">
-              Alongside the day job I&apos;m a CFA Level III candidate (the final tier),
-              which keeps my knowledge of portfolio management, fixed income, and 
-              derivatives sharp and current. I also build Python automation tools for
-              finance workflows — it&apos;s where analytical and engineering thinking meet.
+              Alongside the finance work, I build Python and VBA automation tools
+              that eliminate manual toil — solutions I&apos;ve built at JPMC have saved
+              800+ hours per year and $5mn+ in operational savings. I&apos;m also an
+              AI Ambassador at JPMC and lead LLM hackathons for the team.
             </p>
           </div>
         </div>

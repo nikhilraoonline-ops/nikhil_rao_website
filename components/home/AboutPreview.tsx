@@ -3,17 +3,18 @@ import { ArrowRight } from "lucide-react";
 import Section from "@/components/ui/Section";
 
 const stats = [
-  { label: "Years in Finance",  value: "5+"         },
-  { label: "Certifications",    value: "CA · CFA III" },
-  { label: "Assets Covered",    value: "Rates · Credit · Equity" },
-  { label: "Automation Tools",  value: "Python · VBA" },
+  { label: "Years in Finance",  value: "4+"                    },
+  { label: "Certifications",    value: "CA · CFA L3 Passed"    },
+  { label: "Products",          value: "MBS · IRS · TBA · CLN" },
+  { label: "Automation Saves",  value: "800+ hrs p.a."         },
 ];
 
 const highlights = [
-  "Daily P&L production for fixed income and rates trading desks",
-  "First-attempt Chartered Accountant (ICAI), financial services auditor",
-  "CFA Level III candidate — derivatives, fixed income, portfolio management",
-  "Building Python tooling to automate reconciliations and reporting",
+  "Daily P&L, risk reporting and reconciliations for Mortgage Banking Secondary Markets at JPMC",
+  "Qualified Chartered Accountant (ICAI) and CFA Level 3 passed",
+  "Built Python and VBA solutions creating time saves of 800+ hours per year",
+  "Won Value Pin for a Python-based recon saving the firm upwards of $5mn",
+  "AI Ambassador and lead of the AI squad at JP Morgan Chase, Bengaluru",
 ];
 
 export default function AboutPreview() {
@@ -26,14 +27,16 @@ export default function AboutPreview() {
         {/* Left — narrative */}
         <div>
           <p className="text-white/60 text-base leading-relaxed mb-5">
-            I work in product control at a global investment bank in London,
-            where my day involves reconciling P&amp;L, decomposing risk exposures,
-            and independently verifying derivative prices.
+            I work as a Product Controller at JP Morgan Chase &amp; Co. in Bengaluru,
+            covering Mortgage Banking Secondary Markets trade desks. My day involves
+            daily and monthly P&amp;L reporting, risk reconciliations, and SOX and
+            Volcker controls across products like MBS, Ratelocks, IRS, TBAs and CLNs.
           </p>
           <p className="text-white/60 text-base leading-relaxed mb-7">
-            My background is in professional accounting (Chartered Accountant,
-            ICAI) and financial services audit, which gives me both the
-            technical and the governance lens on how financial institutions work.
+            My background spans professional accounting (CA, ICAI), Big-firm audit
+            at Sundaram &amp; Srinivasan, and an industrial training stint at
+            Hindustan Unilever — which gives me a broad technical and governance
+            lens across financial institutions and corporates.
           </p>
 
           <ul className="space-y-2.5 mb-8">
