@@ -11,55 +11,55 @@ export interface Project {
 
 export const allProjects: Project[] = [
   {
-    title: "Daily P&L Dashboard",
+    title: "Ad-hoc Python Reconciliation — $5mn+ Savings",
     description:
-      "Automated P&L production and reporting pipeline for fixed income trading desks.",
-    tech: ["Python", "Pandas", "openpyxl", "Matplotlib"],
+      "An unplanned, high-urgency Python reconciliation tool built to resolve a critical break between two trade systems at JP Morgan Chase.",
+    tech: ["Python", "pandas", "openpyxl"],
     problem:
-      "The daily P&L report was manually produced in Excel — requiring 2+ hours of data collection, VLOOKUP-heavy reconciliation, and formatting. Human error risk was non-trivial and any delay in report delivery had downstream consequences.",
+      "A large unreconciled break was identified between two internal systems for Mortgage Banking Secondary Markets positions. The break had potential P&L and regulatory implications. The existing manual process was too slow to isolate the root cause within the required timeframe, and the volume of trade records made a spreadsheet-based approach unworkable.",
     approach:
-      "Built a Python pipeline using Pandas to ingest trade data from multiple CSV/Excel exports, compute P&L by book, trader, and product, then output a formatted Excel workbook and an HTML email summary. Designed a threshold-based alerting module to highlight moves outside predefined risk bands.",
+      "Built an ad-hoc Python script using pandas to ingest and normalise records from both systems, perform a granular match on trade IDs, notional, and product type, and surface a structured break report with classification of each exception. The script was iterated rapidly in a live environment to chase down the root cause.",
     impact:
-      "Reduced daily reporting time from 2+ hours to under 15 minutes. Zero manual formatting errors post-deployment. Threshold alerts enabled faster escalation — two significant breaks were caught same-day that would previously have surfaced at month-end.",
+      "Successfully identified and resolved the break, resulting in savings of upwards of $5mn for the firm. Recognised with a JP Morgan Chase Value Pin for Operational Excellence.",
     featured: true,
   },
   {
-    title: "Trade Reconciliation Automation",
+    title: "P&L & Risk Reporting Automation Suite",
     description:
-      "Python-VBA hybrid tool for automated trade matching between front-office and back-office systems.",
-    tech: ["Python", "pandas", "VBA", "xlwings"],
+      "A suite of Python and VBA tools to automate daily and monthly P&L production and risk reporting across Mortgage Banking Secondary Markets desks at JPMC.",
+    tech: ["Python", "VBA", "pandas", "openpyxl", "Excel"],
     problem:
-      "Daily reconciliation between front-office (Murex) and the accounting general ledger required manual comparison of 400–600 trades. The process took 2.5–3 hours and the break log was inconsistently documented, making trend analysis impossible.",
+      "Daily P&L and risk reporting for MBS, Ratelock, IRS, TBA and CLN desks involved significant manual effort — pulling data from multiple sources, reconciling figures, formatting reports, and distributing to stakeholders. This consumed several hours daily and introduced operational risk through manual steps.",
     approach:
-      "Two-layer solution: a VBA macro to standardize and export raw data from both systems into a common format, and a Python script (pandas) to match records, classify breaks by type (price tolerance, missing trade, quantity mismatch), and generate a structured exception report.",
+      "Developed a combination of Python scripts and VBA macros to automate the end-to-end reporting workflow: automated data ingestion from system exports, reconciliation logic, exception flagging, formatted Excel output generation, and scheduled distribution. Built incrementally, one report at a time, with validation checkpoints at each stage.",
     impact:
-      "Reconciliation time dropped from ~3 hours to 20 minutes. Break classification enabled root-cause trending — one systematic interface issue was identified and resolved within a week of deployment.",
+      "Automation solutions collectively save 800+ hours per annum across the team. Reports that previously took hours are produced in minutes, with lower error rates and a clear audit trail for SOX and Volcker control purposes.",
     featured: true,
   },
   {
-    title: "Options Greeks Calculator",
+    title: "LLM Hackathon Programme & AI Tooling",
     description:
-      "Interactive Black-Scholes pricing and risk tool with full first- and second-order Greeks.",
-    tech: ["Python", "NumPy", "SciPy", "Streamlit"],
+      "Designed and led an internal LLM hackathon series at JP Morgan Chase, Bengaluru, to explore AI-driven automation across finance workflows.",
+    tech: ["Python", "LLM / GPT APIs", "Prompt Engineering", "Excel"],
     problem:
-      "Needed a quick, customizable reference tool for options pricing during CFA Level III prep and market analysis sessions — Bloomberg terminal access is not always available outside work.",
+      "Finance operations teams spend significant time on repetitive, rules-based tasks — commentary drafting, exception triage, data lookup and summarisation — that are well-suited to large language model augmentation. There was no structured programme to explore or pilot these tools within the line of business.",
     approach:
-      "Implemented the Black-Scholes model with delta, gamma, vega, theta, rho, vanna, and volga. Built a Streamlit UI for interactive parameter sliders (spot, strike, vol, rate, expiry) with real-time chart updates showing Greek profiles across the strike and time dimensions.",
+      "Organised and facilitated multiple LLM hackathons for analysts and associates, defining problem statements around finance workflows, setting up sandboxed GPT-based tooling, and coaching participants on prompt engineering and integration patterns. Acted as primary point of contact for AI tooling exploration within the team.",
     impact:
-      "Personal tool actively used during CFA derivatives study. The interactive Greek surfaces helped build intuition for convexity and vega behaviour that static textbook charts cannot convey. Shared with two CFA study group peers.",
-    featured: false,
+      "Won a JP Morgan Chase Value Pin for organising the hackathon programme. Designated AI Ambassador for the line of business and currently one of the leads of the AI squad at JPMC Bengaluru. The programme has driven ongoing adoption of LLM-assisted workflows across the team.",
+    featured: true,
   },
   {
-    title: "Audit Checklist System",
+    title: "Audit Documentation & Checklist System",
     description:
-      "Dynamic VBA-driven audit documentation tool for standardized financial statement testing.",
+      "A VBA-driven dynamic audit workpaper system for standardised testing documentation, built during the Rao & Santosh engagement period.",
     tech: ["Excel", "VBA", "Power Query"],
     problem:
-      "Audit teams used inconsistently formatted, manually updated Excel workbooks for testing documentation. Partner review time was inflated by formatting issues, and compliance gaps appeared across engagements.",
+      "Audit workpapers were maintained in inconsistently formatted, manually updated Excel files. Testing templates varied across engagements and team members, making quality review slower and creating gaps in compliance documentation for statutory and internal audit files.",
     approach:
-      "Built a VBA-driven system with dynamic form generation based on risk assessment selections. Auto-populates testing templates, applies conditional formatting for completion status (Not started / In progress / Complete / N/A), and generates a summary dashboard exportable as PDF.",
+      "Built a VBA-driven system that generates testing templates dynamically based on audit area and risk selections. Auto-populates client and engagement details, applies conditional formatting for completion status (Not started / In progress / Complete / N/A), and produces a summary sign-off dashboard exportable as PDF for partner review.",
     impact:
-      "Adopted across 12 client engagements. Estimated 30% reduction in partner review time from standardised documentation. Became the team's default template for BFSI sector audits.",
+      "Standardised workpaper format across all engagements. Reduced partner review time through consistent documentation structure. Adopted as the team's default template for statutory and internal audit files across real estate, jewellery, and software sector clients.",
     featured: false,
   },
 ];
