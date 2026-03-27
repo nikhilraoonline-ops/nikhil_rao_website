@@ -13,8 +13,8 @@ const socialLinks = [
     icon: Github,
   },
   {
-    href: "mailto:your@email.com",
-    label: "Email",
+    href: "mailto:nikhil.rao.work@gmail.com",
+    label: "nikhil.rao.work@gmail.com",
     icon: Mail,
   },
 ];
@@ -89,7 +89,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Nikhil Rao · All rights reserved
           </p>
           <p className="text-white/15 text-xs font-mono">
-            Built with Next.js · Deployed on Vercel
+            Built with Next.js &amp; AI · Deployed on Vercel
           </p>
         </div>
       </div>
