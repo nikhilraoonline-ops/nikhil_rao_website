@@ -66,7 +66,7 @@ export default function Hero() {
 
           {/* Tagline */}
           <p className="mt-7 text-xl sm:text-2xl font-light text-white/55 anim-2">
-            Finance, Markets, and Systems Thinking.
+            Finance, Markets, Automation and AI
           </p>
 
           {/* Short pitch */}
